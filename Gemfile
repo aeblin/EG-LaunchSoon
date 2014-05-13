@@ -1,11 +1,20 @@
 source 'https://rubygems.org'
 
+#Framework and dependencies
+gem 'rails', '3.2.14'
+gem 'mailchimp-api'
+gem 'foreman'
+
+# Front-End
+gem 'bootstrap-sass', '~> 3.0.2.0'
+gem 'jquery-rails'
+
 group :assets do
-  gem 'coffee-rails',    '~> 3.2.1'
   gem 'compass-rails'
   gem 'sass-rails',      '~> 3.2.3'
+  gem 'coffee-rails',    '~> 3.2.1'
   gem 'uglifier',        '>= 1.0.3'
-  gem 'zurb-foundation'
+  gem 'asset_sync'
 end
 
 group :development, :test do
@@ -39,6 +48,3 @@ group :test do
 end
 
 gem 'coveralls', require: false
-gem 'jquery-rails'
-gem 'mailchimp-api'
-gem 'rails', '3.2.14'

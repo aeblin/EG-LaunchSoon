@@ -1,25 +1,38 @@
-<div class="row">
-  <div class="large-7 small-12 columns large-centered">
-    <div class="radius panel" style="margin-top:50px;">
-      <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
-      <h4 class="subheader" ><%= raw SITE_BLURB %></h4>
-
-      <p style="text-align:center;"><em>Enter your email to sign up for our mailing list:</em></p>
-
-      <div class="row collapse">
-        <%= form_tag '/interested' do %>
-          <div class="large-9 small-10 columns"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
-          <div class="large-3 small-2 columns"><%= submit_tag 'Yes!', class: 'postfix radius button' %></div>
-          <%= hidden_field_tag :ref, "#{@ref}" %>
-        <% end %>
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 copy">
+        <h1>Overworked and Overwhelmed</h1>
+        <h2>The Mindfulness Alternative</h2>
+        <p>Even small increases in mindfulness can lead to big changes in productivity and quality of life for the overworked and overwhelmed professional.  Overworked and Overwhelmed is a handbook for more mindful work and living that offers:</p>
+        <ul>
+          <li>“Must Know” mindfulness basics that today’s professional needs to thrive in a 24/7 world.</li>
+          <li>Inspiring examples of mindfulness in action from dozens of leaders ranging from a U.S. Coast Guard Commandant to the CEO of Hilton Worldwide.</li>
+          <li>A self-assessment for readers to understand how they perform at their best.</li>
+          <li>Simple routines to reduce stress and sustain peak performance.</li>
+          <li>A personal planning framework for creating the outcomes that matter most at home, at work and in the community.</li>
+        </ul>
       </div>
-
-      <h6 class="subheader" style="text-align:center;">
-        (We're sort of on <a href="http://twitter.com/<%= TWITTER_NAME %>" target="_blank">Twitter</a>.)
-      </h6>
+      <div class="col-md-4 book">
+        <%= image_tag 'ootma_web.png', :class => 'img-responsive ' %>
+      </div>
     </div>
   </div>
-</div>
+</section>
+<section class="mc_embed">
+    <p style="text-align:center;"><em>Enter your email to sign up for our mailing list:</em></p>
+    <%= form_tag '/interested' do %>
+      <div class="col-md-6 col-md-offset-2"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
+      <div class="col-md-2"><%= submit_tag 'YEAH!', class: 'button' %></div>
+      <%= hidden_field_tag :ref, "#{@ref}" %>
+    <% end %>
+  </div>
+</section>
+
+<h6 class="subheader" style="text-align:center;">
+  (We're sort of on <a href="http://twitter.com/<%= TWITTER_NAME %>" target="_blank">Twitter</a>.)
+</h6>
+
 
 <% unless alert.blank? %>
   <div class="row">

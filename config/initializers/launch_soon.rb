@@ -1,14 +1,14 @@
 # Mailchimp API Key
-MAILCHIMP_API_KEY = 'API_KEY'
+MAILCHIMP_API_KEY = ENV['MAILCHIMP_API_KEY']
 
 # Mailchimp Mailing List ID
-MAILCHIMP_LIST_ID = 'LIST_ID'
+MAILCHIMP_LIST_ID = ENV['MAILCHIMP_LIST_ID']
 
 # This site's domain name, including the www. if required (ie: google.com):
 SITE_DOMAIN = 'DOMAIN.TLD'
 
 # Title tag for the site:
-SITE_TITLE = 'Title'
+SITE_TITLE = 'Overworked and Overwhelmed'
 
 # Keywords for the site:
 SITE_KEYWORDS = 'key, words'
@@ -17,7 +17,7 @@ SITE_KEYWORDS = 'key, words'
 SITE_DESCRIPTION = 'DESCRIPTION'
 
 # Blurb about site, displayed on main page:
-SITE_BLURB = 'BLURB'
+SITE_BLURB = 'Words, words, words.'
 
 # Google Analytics code for the site:
 SITE_GOOGLE_ANALYTICS = 'UA-#######-##'
