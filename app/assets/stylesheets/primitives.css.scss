@@ -49,6 +49,29 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   }
 }
 
+#footer {
+  margin-top: 3%;
+  p {
+    margin-top: 6%;
+    font-size: 0.95em;
+  }
+  hr {
+    margin-top: 0px;
+  }
+  .logo {
+    img {
+      max-width: 35px;
+    }
+    a img {
+      -webkit-transition: opacity .25s ease;
+      transition: opacity .25s ease;
+      &:hover{
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
 a {
   font-family: $primary_font, $secondary_font, $tertiary_font;
   font-weight: 300;
@@ -118,11 +141,11 @@ h3 {
 
 h4 {
   font-family: $primary_font, $secondary_font, $tertiary_font;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  color: $h4_color;
+  color: $h3_color;
   margin-bottom: 10px;
 }
 
