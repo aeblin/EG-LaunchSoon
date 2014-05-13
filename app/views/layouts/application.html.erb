@@ -7,11 +7,6 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-
-    <!-- Uncomment to make IE8 render like IE7 -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-
-    <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
     <title><%= SITE_TITLE %></title>
@@ -20,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7361652/693064/css/fonts.css" />
     <%= stylesheet_link_tag    "application" %>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "application" %>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '<%= SITE_GOOGLE_ANALYTICS %>']);
@@ -34,6 +30,5 @@
   </head>
   <body>
     <%= yield %>
-    <%= javascript_include_tag "application" %>
   </body>
 </html>

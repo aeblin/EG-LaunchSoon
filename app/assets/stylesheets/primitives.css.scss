@@ -34,10 +34,6 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   background: linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
 }
 
-.book {
-  margin-top: 14%;
-}
-
 .content_box {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -133,7 +129,7 @@ p {
   font-family: $secondary_font;
   font-weight: 300;
   font-style: normal;
-  color: #fefefe;
+  color: rgba(250,250,250,0.9);
   font-size: 1.1em;
   line-height: 1.6;
 }
@@ -142,24 +138,17 @@ ul {
   font-family: $secondary_font;
   font-weight: 300;
   font-style: normal;
-  color: #fefefe;
+  color: rgba(250,250,250,0.9);
   font-size: 1.1em;
   line-height: 1.6; 
 }
 
+hr {
+  margin-top: 0px;
+}
+
 .center {
   text-align: center;
-}
-
-.ml-20 {
-  margin-left: 20px;
-}
-
-.loader {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: image-url('loading.gif');
 }
 
 #errors p{
