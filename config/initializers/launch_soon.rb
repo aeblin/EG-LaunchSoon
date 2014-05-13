@@ -10,14 +10,14 @@ SITE_DOMAIN = 'overworkedandoverwhelmed.com'
 # Title tag for the site:
 SITE_TITLE = 'Overworked and Overwhelmed'
 
+# Subtitle tag
+SITE_SUBTITLE = 'The Mindfulness Alternative'
+
 # Keywords for the site:
-SITE_KEYWORDS = 'Scott, Eblin, Eblin Group, Overworked, Overwhelmed, Exhausted, Book, Next Level, Executive, Coaching, Corporate, Vibrant, Zen'
+SITE_KEYWORDS = 'Scott, Eblin, Eblin Group, Overworked, Overwhelmed, Mindfulness, Alternative, Exhausted, Book, Next Level, Executive, Coaching, Corporate, Vibrant, Zen'
 
 # # Description for the site, also used in Tweet so keep it short:
 SITE_DESCRIPTION = 'Overworked and Overwhelmed - by Scott Eblin'
-
-# Blurb about site, displayed on main page:
-# SITE_BLURB = 'Words, words, words.'
 
 # Google Analytics code for the site:
 SITE_GOOGLE_ANALYTICS = 'UA-#######-##'

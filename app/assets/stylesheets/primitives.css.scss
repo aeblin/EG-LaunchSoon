@@ -28,20 +28,25 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   @extend .form-control !optional;
 }
 
-#main {
+#header {
+  margin-bottom: 2.5%;
+  hr {
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+.main {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   background: linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
 }
 
-.content_box {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  background: #f6f6f6;
+.book {
+  img {
+    margin: auto;
+  }
 }
 
 a {
@@ -49,15 +54,16 @@ a {
   font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  transition: color .15s ease-in-out;
-  -moz-transition: color .15s ease-in-out;
-  -webkit-transition: color .15s ease-in-out;
+  transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
   text-decoration: none;
   &:hover{
     text-decoration: none;
+    color: rgba(250,250,250,0.7);
   }
   &:active {
-    color: #C63833;
+    color: #ffffff;
     text-decoration: none;
   }
 }
@@ -66,20 +72,20 @@ h1 {
   margin: 0 auto;
   font-family: $primary_font, $secondary_font, $tertiary_font;
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   color: $h1_color;
   text-transform: uppercase;
   line-height: 1.25;
   @media (max-width: 760px) {
-    font-size: 31px;
+    font-size: 45px;
   }
   a {
     color: $h1_color;
     text-decoration: none;
     &:hover {
-      color: $h1_color;
+      color: rgba(250,250,250,0.7);
       text-decoration: none;
     }
   }
@@ -95,16 +101,19 @@ h2 {
   margin-top: 0px;
   margin-bottom: 3%;
   text-transform: uppercase;
+  @media (max-width: 760px) {
+    font-size: 21px;
+  }
 }
 
-h3 {
-  font-family: $primary_font, $secondary_font, $tertiary_font;
-  font-size: 30px;
+h3 { 
+  font-family: $secondary_font, $tertiary_font;
+  font-size: 20px;
   font-weight: 200;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   color: $h3_color;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
 }
 
 h4 {
@@ -126,25 +135,19 @@ h5 {
 }
 
 p {
-  font-family: $secondary_font;
-  font-weight: 300;
+  font-family: $secondary_font, $tertiary_font;
+  font-weight: 200;
   font-style: normal;
   color: rgba(250,250,250,0.9);
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.25;
 }
 
 ul {
-  font-family: $secondary_font;
-  font-weight: 300;
-  font-style: normal;
-  color: rgba(250,250,250,0.9);
-  font-size: 1.1em;
-  line-height: 1.6; 
-}
-
-hr {
-  margin-top: 0px;
+  @extend p;
+  li {
+    margin-bottom: 2%;
+  }
 }
 
 .center {
