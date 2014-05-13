@@ -13,15 +13,17 @@
       <ul>
         <li>“Must Know” mindfulness basics that today’s professional needs to thrive in a 24/7 world.</li>
         <li>Inspiring examples of mindfulness in action from dozens of leaders ranging from a U.S. Coast Guard Commandant to the CEO of Hilton Worldwide.</li>
-        <li>A personal planning framework for creating the outcomes that matter most at home, at work and in the community.</li>
+        <li>A personal planning framework for creating the outcomes that matter most at home, at work, and in the community.</li>
       </ul>
       <hr>
-      <h3>Receive a free chapter and additional specials on release day.</h3>
-      <%= form_tag '/interested' do %>
-        <div class="col-md-6"><%= email_field_tag 'email', nil, placeholder: 'Keep me posted!' %></div>
-        <div class="col-md-2"><%= submit_tag 'YEAH!', class: 'button' %></div>
-      <%= hidden_field_tag :ref, "#{@ref}" %>
-      <% end %>
+      <h4>Receive a free chapter and additional specials on release day.</h4>
+      <div id="signup_section">
+        <%= form_tag '/interested' do %>
+          <div class="field-group"><%= email_field_tag 'email', nil, placeholder: 'Keep me posted!', id: 'signup_input' %></div>
+          <div class="clear"><%= submit_tag 'SUBMIT', class: 'signup_button' %></div>
+        <%= hidden_field_tag :ref, "#{@ref}" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
