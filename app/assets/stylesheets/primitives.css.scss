@@ -40,6 +40,8 @@ textarea, input[type=text], input[type=email], input[type=password], select {
 .main {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  background: #008fc5;
+  background: -webkit-linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
   background: linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
 }
 
@@ -209,7 +211,7 @@ p {
 ul {
   @extend p;
   li {
-    margin-bottom: 2%;
+    margin-bottom: 10px;
   }
 }
 
