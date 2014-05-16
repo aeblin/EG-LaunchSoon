@@ -90,6 +90,39 @@ textarea, input[type=text], input[type=email], input[type=password], select {
     }
   }
 }
+#preorder {
+  margin-top: 5%;
+  text-align: center;
+  .preorder_button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  font-family: $secondary_font, $tertiary_font;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  transition: background-color .15s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.55);
+    text-decoration: none;
+  }
+  &:active {
+  color: white;
+    background-color: rgba(255,255,255,0.75);
+  }
+  }
+}
+
 
 #footer {
   margin-top: 3%;
