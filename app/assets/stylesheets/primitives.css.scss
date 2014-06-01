@@ -1,6 +1,6 @@
 $h1_color: #ffffff;
 $h2_color: #ffffff;
-$h3_color: #0a4d6d;
+$h3_color: #ffffff;
 $h4_color: #202020;
 $h5_color: #4B4B4B;
 
@@ -41,8 +41,8 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   background: #008fc5;
-  background: -webkit-linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
-  background: linear-gradient(40deg, #008fc5 0%,#008fc5 44%,#034768 100%);
+  background: -webkit-radial-gradient(circle farthest-side at right bottom,#fdfdfe 5%,#008fc5 25%,#034768 80%,#043D54 98%);
+  background: radial-gradient(circle farthest-side at right bottom,#fdfdfe 5%,#008fc5 25%,#034768 80%,#043D54 98%);
 }
 
 .book {
