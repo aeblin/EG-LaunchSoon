@@ -1,17 +1,10 @@
 require File.expand_path('../boot', __FILE__)
 
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "active_resource/railtie"
-require "rails/test_unit/railtie"
-require "sprockets/railtie"
+require 'rails/all'
 
-if defined?(Bundler)
-  # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
-  # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
-end
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require *(Rails.groups + [:assets])
 
 module LaunchSoon
   class Application < Rails::Application
@@ -63,7 +56,5 @@ module LaunchSoon
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # Enable fonts assets
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

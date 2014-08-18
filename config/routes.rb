@@ -1,4 +1,3 @@
 LaunchSoon::Application.routes.draw do
-  root :to => "home#index"
-  match '/interested' => "home#interested"
+  root to: "home#index"
 end
