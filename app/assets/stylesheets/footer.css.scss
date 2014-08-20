@@ -1,0 +1,22 @@
+#footer {
+  margin-top: 3%;
+  p {
+    margin-top: 6%;
+    font-size: 0.95em;
+  }
+  hr {
+    margin-top: 0px;
+  }
+  .logo {
+    img {
+      max-width: 35px;
+    }
+    a img {
+      -webkit-transition: opacity .25s ease;
+      transition: opacity .25s ease;
+      &:hover{
+        opacity: 0.75;
+      }
+    }
+  }
+}

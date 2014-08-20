@@ -1,3 +1,123 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.landing {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #008fc5;
+}
+
+.testimonials {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	background: #fdfdfd;
+	height: 100vh;
+	.testimonial-quote {
+		p {
+			color: $dark_blue;
+		}
+		.name {
+			color: $dark_blue;
+			text-align: right;
+			font-weight: 300;
+			margin-bottom: 0.25em;
+		}
+		.credentials {
+			color: $dark_blue;
+			text-align: right;
+		}
+	}
+	.testimonial-slider {
+		margin-top: 3em;
+	}
+}
+
+.tiers {
+	height: 100vh;
+}
+
+.header {
+  margin-bottom: 1em;
+  hr {
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+.header-dark {
+	@extend .header;
+	h1 {
+		color: $dark_blue;
+	}
+	h2 {
+		color: $dark_blue;
+		font-size: 28px;
+	}
+	hr {
+		color: $dark_blue;
+	}
+}
+
+.book {
+  img {
+    margin: auto;
+  }
+}
+
+#signup_section{
+    #signup_input {
+    float: left;
+    width: 75%;
+    height: 46px;
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: $secondary_font, $tertiary_font;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2em;
+    @media (max-width: 640px) {
+      font-size: 1em;
+    }
+  }
+  .signup_button {
+    padding: 9px;
+    width: 25%;
+    border: 2px solid #ffffff;
+    background-color: rgba(30, 40, 50, 0.85);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: $secondary_font, $tertiary_font;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2em;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    &:hover {
+      background-color: rgba(30,40,50, 0.2);
+      -webkit-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
+    }
+  }
+}
+
+.gradient-bg {
+  background: -webkit-radial-gradient(circle farthest-side at right bottom,#008fc5 25%,#034768 80%, #192f42 98%);
+  background: radial-gradient(circle farthest-side at right bottom,#008fc5 25%,#034768 80%,#043D54 98%);
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 54%; /* NOT 16:9 */
+	padding-top: 25px;
+	margin-bottom: 2em;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

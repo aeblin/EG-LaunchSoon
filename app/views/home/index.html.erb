@@ -1,36 +1,105 @@
-<div class="container">
-  <section id="header" class="row center">
-    <h1><%= SITE_TITLE %></h1>
-    <hr>
-    <h2><%= SITE_SUBTITLE %></h2>
-  </section>
-  <div class="row">
-    <div class="col-md-5 col-md-push-7 book">
-      <%= image_tag 'ootma_web.png', :class => 'img-responsive ' %>
-    </div>
-    <div class="col-md-7 col-md-pull-5 copy">
-      <p>Small increases in mindfulness can lead to big changes in productivity and quality of life for the overworked and overwhelmed professional</p> <p>Overworked and Overwhelmed is a handbook for more mindful work and living by Scott Eblin; Overworked and Overwhelmed includes:</p>
-      <ul>
-        <li>“Must Know” mindfulness basics that today’s professional needs to thrive in a 24/7 world.</li>
-        <li>Inspiring examples of mindfulness in action from dozens of leaders ranging from a U.S. Coast Guard Commandant to the CEO of Hilton Worldwide.</li>
-        <li>A personal planning framework for creating the outcomes that matter most at home, at work, and in the community.</li>
-      </ul>
+<section class="landing gradient-bg">
+  <div class="container">
+    <section class="header row center">
+      <h1><%= SITE_TITLE %></h1>
       <hr>
-      <h4>Receive a free chapter and additional specials on release day.</h4>
-      <div id="signup_section">
-        <%= form_tag '/interested' do %>
-          <div class="field-group"><%= email_field_tag 'email', nil, placeholder: 'Keep me posted!', id: 'signup_input' %></div>
-          <div class="clear"><%= submit_tag 'SUBMIT', class: 'signup_button' %></div>
-        <%= hidden_field_tag :ref, "#{@ref}" %>
-        <% end %>
+      <h2><%= SITE_SUBTITLE %></h2>
+    </section>
+    <section id="video" class="row">
+      <div class="col-md-12">
+        <div class="videoWrapper">
+          <iframe src="//player.vimeo.com/video/103378242" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
       </div>
-      <div id="preorder">
-        <a class="preorder_button" href="http://www.amazon.com/gp/product/1118910664/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118910664&linkCode=as2&tag=wwweblingrouc-20&linkId=BJS5FX4TRYS6GOLV" target="_blank">PREORDER NOW</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=wwweblingrouc-20&l=as2&o=1&a=1118910664" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-      </div>
-    </div>
+    </section>
   </div>
-</div>
+</section>
 
+<section class="testimonials">
+  <div class="container">
+    <section class="header-dark row center">
+      <h1>IN OTHER'S WORDS</h1>
+      <hr>
+      <h2>PRAISE FOR OVERWORKED AND OVERWHELMED</h2>
+    </section>
+    <section class="testimonial-slider row">
+      <div class="col-md-9">
+        <div class="carousel fade" data-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="item active">
+              <div class="testimonial-entry row">
+                <div class="col-xs-2">
+                  <%= image_tag 'daniel_pink.jpg', :class => 'img-responsive img-circle' %>
+                </div>
+                <div class="testimonial-quote col-xs-10">
+                  <p class="quote">“If I had to choose one skill that could simultaneously bring greater happiness in life and more 
+                      meaningful engagement in work, it would be simple mindfulness. There's a way out of the 
+                      overwhelming busyness of modern life - Scott Eblin has written the guidebook.”
+                  </p>
+                  <h3 class="name">Daniel H. Pink</h3>
+                  <p class="credentials">New York Times bestselling author of <em>Drive</em> and <em>To Sell is Human</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial-entry row">
+                <div class="col-xs-2">
+                  <%= image_tag 'raghu_krishnamoorthy.jpg', :class => 'img-responsive img-circle' %>
+                </div>
+                <div class="testimonial-quote col-xs-10">
+                  <p class="quote">“In a world where high velocity performance is the norm, a caffeine-driven, sleep-deprived, 
+                    smart phone addicted existence seems to be inevitable. Scott Eblin teaches us that it 
+                    need not be that way... <br/>If you want to reclaim yourself, this book is a must read.”
+                  </p>
+                  <h3 class="name">Raghu Krishnamoorthy</h3>
+                  <p class="credentials">VP, Executive Development and Chief Learning Officer - General Electric</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial-entry row">
+                <div class="col-xs-2">
+                  <%= image_tag 'marshall_goldsmith.jpg', :class => 'img-responsive img-circle' %>
+                </div>
+                <div class="testimonial-quote col-xs-10">
+                  <p class="quote">“Scott Eblin’s must-read book gives you the tools to balance life with work, satisfaction with 
+                    success, and mindfulness with purpose. Based on years of critical research in leadership success, 
+                    Overworked and Overwhelmed will fundamentally change how you live each day. Brilliant!”
+                  </p>
+                  <h3 class="name">Marshall Goldsmith</h3>
+                  <p class="credentials">New York Times bestselling author of <em>What Got You Here Won't Get You There</em></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 book">
+        <%= image_tag 'ootma_web.png', :class => 'img-responsive ' %>
+      </div>
+
+    </section>
+  </div>
+</section>
+
+<section class="tiers gradient-bg">
+</section>
+
+<div id="signup_section">
+  <%= form_tag '/interested' do %>
+    <div class="field-group"><%= email_field_tag 'email', nil, placeholder: 'Keep me posted!', id: 'signup_input' %></div>
+    <div class="clear"><%= submit_tag 'SUBMIT', class: 'signup_button' %></div>
+  <%= hidden_field_tag :ref, "#{@ref}" %>
+  <% end %>
+</div>
+<div id="preorder">
+  <a class="preorder_button" href="http://www.amazon.com/gp/product/1118910664/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118910664&linkCode=as2&tag=wwweblingrouc-20&linkId=BJS5FX4TRYS6GOLV" target="_blank">PREORDER NOW</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=wwweblingrouc-20&l=as2&o=1&a=1118910664" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</div>
 
 <% unless alert.blank? %>
   <div class="row">
