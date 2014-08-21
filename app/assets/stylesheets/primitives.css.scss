@@ -66,6 +66,10 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   text-align: center;
 }
 
+body {
+  font-size: 14px;
+}
+
 a {
   font-family: $primary_font, $secondary_font, $tertiary_font;
   font-weight: 300;
@@ -124,13 +128,13 @@ h2 {
 }
 
 h3 { 
-  font-family: $secondary_font, $tertiary_font;
-  font-size: 20px;
+  font-family: $primary_font, $secondary_font, $tertiary_font;
+  font-size: 48px;
   font-weight: 200;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   color: $h3_color;
-  margin-bottom: 2.5%;
+  margin-bottom: 2%;
 }
 
 h4 {

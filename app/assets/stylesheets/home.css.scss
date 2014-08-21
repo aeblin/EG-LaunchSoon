@@ -2,21 +2,29 @@
   padding-top: 1em;
   padding-bottom: 1em;
   background: #008fc5;
+  min-height: 100vh;
 }
 
 .testimonials {
 	padding-top: 3em;
 	padding-bottom: 3em;
 	background: #fdfdfd;
-	height: 100vh;
+	min-height: 75vh;
+	.book-slider {
+		margin-top: 3em;
+	}
+	.testimonial-entry {
+		padding: 4.5em 0;
+	}
 	.testimonial-quote {
-		p {
+		.quote {
 			color: $dark_blue;
 		}
 		.name {
 			color: $dark_blue;
 			text-align: right;
-			font-weight: 300;
+			font-size: 2.5em;
+			font-weight: 200;
 			margin-bottom: 0.25em;
 		}
 		.credentials {
@@ -24,12 +32,15 @@
 			text-align: right;
 		}
 	}
-	.testimonial-slider {
-		margin-top: 3em;
+	.book {
+		img {
+			max-height: 350px;
+		}
 	}
 }
 
 .tiers {
+	padding-top: 3em;
 	height: 100vh;
 }
 
@@ -37,8 +48,6 @@
   margin-bottom: 1em;
   hr {
     margin-top: 0px;
-    margin-right: 15px;
-    margin-left: 15px;
   }
 }
 
@@ -46,9 +55,17 @@
 	@extend .header;
 	h1 {
 		color: $dark_blue;
+		background: -webkit-radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%, #192f42 98%);
+  	background: radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%,#043D54 98%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h2 {
 		color: $dark_blue;
+		background: -webkit-radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%, #192f42 98%);
+  	background: radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%,#043D54 98%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		font-size: 28px;
 	}
 	hr {
@@ -111,7 +128,7 @@
 	position: relative;
 	padding-bottom: 54%; /* NOT 16:9 */
 	padding-top: 25px;
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 	height: 0;
 }
 .videoWrapper iframe {
@@ -120,4 +137,31 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.preorder-button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid #ffffff;
+  padding: 20px 20px;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  font-family: $secondary_font, $tertiary_font;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  transition: background-color .15s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.55);
+    text-decoration: none;
+  }
+  &:active {
+  color: white;
+    background-color: rgba(255,255,255,0.75);
+  }
 }

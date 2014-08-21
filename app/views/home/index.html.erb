@@ -1,29 +1,41 @@
 <section class="landing gradient-bg">
   <div class="container">
     <section class="header row center">
-      <h1><%= SITE_TITLE %></h1>
-      <hr>
-      <h2><%= SITE_SUBTITLE %></h2>
+      <div class="col-md-12">
+        <h1><%= SITE_TITLE %></h1>
+        <hr>
+        <h2><%= SITE_SUBTITLE %></h2>
+      </div>
     </section>
     <section id="video" class="row">
-      <div class="col-md-12">
+      <div class="col-md-10 col-md-offset-1">
         <div class="videoWrapper">
           <iframe src="//player.vimeo.com/video/103378242" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
+    </section>
+    <section class="row center">
+      <a class="preorder-button" href="#purchase">PURCHASE OPTIONS</a>
     </section>
   </div>
 </section>
 
 <section class="testimonials">
   <div class="container">
-    <section class="header-dark row center">
-      <h1>IN OTHER'S WORDS</h1>
-      <hr>
-      <h2>PRAISE FOR OVERWORKED AND OVERWHELMED</h2>
+    <section class="header-dark row">
+      <div class="col-md-12">
+        <h1>IN OTHER'S WORDS</h1>
+        <hr>
+        <h2>PRAISE FOR OVERWORKED AND OVERWHELMED</h2>
+      </div>
     </section>
-    <section class="testimonial-slider row">
-      <div class="col-md-9">
+    <section class="book-slider row">
+
+      <div class="col-sm-3 col-sm-push-9 book">
+        <%= image_tag 'ootma_web.png', :class => 'img-responsive ' %>
+      </div>
+
+      <div class="col-sm-9 col-sm-pull-3">
         <div class="carousel fade" data-ride="carousel">
           <div class="carousel-inner">
             
@@ -79,15 +91,32 @@
         </div>
       </div>
 
-      <div class="col-md-3 book">
-        <%= image_tag 'ootma_web.png', :class => 'img-responsive ' %>
-      </div>
-
     </section>
   </div>
 </section>
 
 <section class="tiers gradient-bg">
+  <div class="container">
+    <section class="header row">
+      <div class="col-md-12">
+        <h1>SIMPLE MINDFULNESS, MADE SIMPLE TO SHARE</h1>
+        <hr>
+        <h2>PRE-RELEASE PURCHASE OPTIONS</h2>
+      </div>
+    </section>
+
+    <section class="tier-info row">
+      <div class="col-md-12">
+        <h3>RECLAIM YOURSELF AND SHARE THE KNOWLEDGE</h3>
+        <p>You’ll want to share Overworked and Overwhelmed: The Mindfulness Alternative with your friends, family, and colleagues, so we’ve made that easy. Pre-order multiple copies of the hardcover book before October 1, 2014 and you’ll receive Scott’s time for free. Simply place your order or contact us for assistance. 
+        </p>
+      </div>
+    </section>
+
+    <section class="tier-one">
+
+    </section>
+  </div>
 </section>
 
 <div id="signup_section">
