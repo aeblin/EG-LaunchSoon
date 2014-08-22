@@ -1,15 +1,15 @@
-#footer {
+.footer {
   margin-top: 3%;
   p {
     margin-top: 6%;
-    font-size: 0.95em;
+    font-size: 1.25em;
   }
   hr {
     margin-top: 0px;
   }
   .logo {
     img {
-      max-width: 35px;
+      max-width: 60px;
     }
     a img {
       -webkit-transition: opacity .25s ease;
@@ -18,5 +18,8 @@
         opacity: 0.75;
       }
     }
+  }
+  .copyright {
+    text-align: right;
   }
 }

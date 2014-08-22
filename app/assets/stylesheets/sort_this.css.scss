@@ -11,3 +11,43 @@
   <%= hidden_field_tag :ref, "#{@ref}" %>
   <% end %>
 </div> -->
+
+#signup_section{
+    #signup_input {
+    float: left;
+    width: 75%;
+    height: 46px;
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: $secondary_font, $tertiary_font;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2em;
+    @media (max-width: 640px) {
+      font-size: 1em;
+    }
+  }
+  .signup_button {
+    padding: 9px;
+    width: 25%;
+    border: 2px solid #ffffff;
+    background-color: rgba(30, 40, 50, 0.85);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: $secondary_font, $tertiary_font;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2em;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    &:hover {
+      background-color: rgba(30,40,50, 0.2);
+      -webkit-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
+    }
+  }
+}
