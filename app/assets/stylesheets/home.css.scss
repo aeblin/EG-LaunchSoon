@@ -41,6 +41,7 @@
 
 .tiers {
 	padding-top: 3em;
+	padding-bottom: 1em;
 	min-height: 100vh;
 
 	.tier-info {
@@ -48,15 +49,22 @@
 	}
 
 	.tier {
-		margin-top: 2em;
-		margin-bottom: 3.5em;
+		margin-top: 3em;
+		margin-bottom: 4.5em;
 		.tier-title {
 			h3 {
 				margin-top: 0.1em;
 				text-transform: uppercase;
 			}
 		}
-
+		.tier-reward {
+			h4 {
+				margin-top: 0;
+				font-size: 36px;
+				color: #008fc5;
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 
@@ -185,4 +193,12 @@
   color: white;
     background-color: rgba(255,255,255,0.75);
   }
+}
+
+.claim-button {
+	@extend .preorder-button;
+	padding: 15px 10px;
+	font-size: 1.15em;
+	font-weight: 400;
+	text-transform: uppercase;
 }
