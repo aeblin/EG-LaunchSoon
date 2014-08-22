@@ -41,7 +41,28 @@
 
 .tiers {
 	padding-top: 3em;
-	height: 100vh;
+	min-height: 100vh;
+
+	.tier-info {
+		margin-bottom: 3.5em;
+	}
+
+	.tier {
+		margin-top: 2em;
+		margin-bottom: 3.5em;
+		.tier-title {
+			h3 {
+				margin-top: 0.1em;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+}
+
+#purchase, .purchase {
+	padding-top: 3em;
+	min-height: 100vh;
 }
 
 .header {

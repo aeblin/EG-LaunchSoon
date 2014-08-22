@@ -1,32 +1,13 @@
 #preorder {
   margin-top: 5%;
   text-align: center;
-  .preorder_button {
-  display: inline-block;
-  color: #ffffff;
-  background-color: rgba(255,255,255,0);
-  border: 2px solid #ffffff;
-  border-radius: 0px;
-  margin: 0 auto;
-  padding: 20px 20px;
-  width: 100%;
-  max-width: 340px;
-  text-align: center;
-  font-family: $secondary_font, $tertiary_font;
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 20px;
-  transition: background-color .15s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    color: white;
-    background-color: rgba(255,255,255,0.55);
-    text-decoration: none;
-  }
-  &:active {
-  color: white;
-    background-color: rgba(255,255,255,0.75);
-  }
-  }
 }
+
+
+<!-- <div id="signup_section">
+  <%= form_tag '/interested' do %>
+    <div class="field-group"><%= email_field_tag 'email', nil, placeholder: 'Keep me posted!', id: 'signup_input' %></div>
+    <div class="clear"><%= submit_tag 'SUBMIT', class: 'signup_button' %></div>
+  <%= hidden_field_tag :ref, "#{@ref}" %>
+  <% end %>
+</div> -->
