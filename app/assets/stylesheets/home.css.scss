@@ -40,11 +40,6 @@
 			text-align: right;
 		}
 	}
-	.book {
-		img {
-			max-height: 350px;
-		}
-	}
 }
 
 .tiers {
@@ -158,6 +153,7 @@
 .book {
   img {
     margin: auto;
+    max-height: 350px;
   }
 }
 
