@@ -10,7 +10,12 @@ $link_color: #0008D6;
 $dark_blue:  #043d54;
 $footer_color: rgba(30,40,50,0.9);
 $text_shadow: 0 1px 0px #fff;
-$font_size: 22px;
+$font_size: 14px;
+
+// Body Font Size
+body {
+  font-size: $font_size;
+}
 
 // Cloud.Typography
 $primary_font:   "Tungsten A", "Tungsten B";
@@ -66,10 +71,6 @@ textarea, input[type=text], input[type=email], input[type=password], select {
   text-align: center;
 }
 
-body {
-  font-size: 14px;
-}
-
 a {
   font-family: $primary_font, $secondary_font, $tertiary_font;
   font-weight: 300;
@@ -92,7 +93,7 @@ a {
 h1 {
   margin: 0 auto;
   font-family: $primary_font, $secondary_font, $tertiary_font;
-  font-size: 80px;
+  font-size: 5.7em;
   font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -100,7 +101,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.25;
   @media (max-width: 760px) {
-    font-size: 45px;
+    font-size: 2.8em;
   }
   a {
     color: $h1_color;
@@ -114,7 +115,7 @@ h1 {
 
 h2 {
   font-family: $secondary_font, $primary_font, $tertiary_font;
-  font-size: 38px;
+  font-size: 2.7em;
   font-weight: 200;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -123,23 +124,26 @@ h2 {
   margin-bottom: 1.5%;
   text-transform: uppercase;
   @media (max-width: 760px) {
-    font-size: 21px;
+    font-size: 1.25em;
   }
 }
 
 h3 { 
   font-family: $primary_font, $secondary_font, $tertiary_font;
-  font-size: 48px;
+  font-size: 3.4em;
   font-weight: 200;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   color: $h3_color;
   margin-bottom: 2%;
+  @media (max-width: 760px) {
+  font-size: 2.75em;
+  }
 }
 
 h4 {
   font-family: $primary_font, $secondary_font, $tertiary_font;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;

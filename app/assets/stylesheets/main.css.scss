@@ -9,3 +9,12 @@
 
 /* Footer styles */
 @import "footer";
+
+/* Button styles */
+@import "buttons";
+
+/* Fix for occasional whitespace on right side of page */
+html,body
+{
+  overflow-x: hidden; 
+}

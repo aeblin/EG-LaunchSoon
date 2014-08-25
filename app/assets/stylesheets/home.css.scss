@@ -3,6 +3,9 @@
   padding-bottom: 1em;
   background: #008fc5;
   min-height: 100vh;
+ 	@media (max-width: 760px) {
+    min-height: 0;
+  }
 }
 
 .testimonials {
@@ -10,6 +13,10 @@
 	padding-bottom: 3em;
 	background: #fdfdfd;
 	min-height: 75vh;
+	 @media (max-width: 760px) {
+    min-height: 0;
+    padding-bottom: 0;
+  }
 	.book-slider {
 		margin-top: 3em;
 	}
@@ -45,13 +52,17 @@
 	min-height: 100vh;
 
 	.tier-info {
-		margin-bottom: 3.5em;
+		margin-bottom: 3em;
 	}
 
 	.tier {
-		margin-top: 3em;
+		margin-top: 1em;
 		margin-bottom: 4.5em;
 		.tier-title {
+			 @media (max-width: 760px) {
+    		float: right;
+    		margin-bottom: 1em;
+  		}
 			h3 {
 				margin-top: 0.1em;
 				text-transform: uppercase;
@@ -60,9 +71,11 @@
 		.tier-reward {
 			h4 {
 				margin-top: 0;
-				font-size: 36px;
 				color: #008fc5;
 				text-transform: uppercase;
+				 @media (max-width: 760px) {
+			    color: #ffffff;
+			  }
 			}
 		}
 	}
@@ -76,6 +89,10 @@
 		margin-top: 3em;
 		text-align: center;
 	}
+}
+
+.amazon {
+	margin-bottom: 2em;
 }
 
 .footer {
@@ -104,11 +121,14 @@
   	background: radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%,#043D54 98%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-size: 28px;
+		font-size: 2em;
+		@media (max-width: 760px) {
+			font-size: 1.25em;
+		}
 	}
 	h3 {
 		@extend h1;
-		font-size: 60px;
+		font-size: 4.25em;
 	}
 	hr {
 		color: $dark_blue;
@@ -119,6 +139,7 @@
   	background: radial-gradient(circle farthest-side at left top,#008fc5 25%,#034768 80%,#043D54 98%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		text-transform: uppercase;
 	}
 }
 
@@ -146,54 +167,4 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.preorder-button {
-  display: inline-block;
-  color: #ffffff;
-  background-color: rgba(255,255,255,0);
-  border: 1px solid #ffffff;
-  padding: 20px 20px;
-  width: 100%;
-  max-width: 340px;
-  text-align: center;
-  font-family: $secondary_font, $tertiary_font;
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 20px;
-  transition: background-color .15s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    color: white;
-    background-color: rgba(255,255,255,0.55);
-    text-decoration: none;
-  }
-  &:active {
-  color: white;
-    background-color: rgba(255,255,255,0.75);
-  }
-}
-
-.preorder-button-dark {
-	@extend .preorder-button;
-	background-color: $dark_blue;
-	border: none;
-  &:hover {
-    color: white;
-    background-color: lighten($dark_blue, 20%);
-    text-decoration: none;
-  }
-  &:active {
-  color: white;
-    background-color: lighten($dark_blue, 25%);
-  }
-}
-
-.claim-button {
-	@extend .preorder-button;
-	padding: 15px 10px;
-	font-size: 1.15em;
-	font-weight: 400;
-	text-transform: uppercase;
 }
