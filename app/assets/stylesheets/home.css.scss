@@ -14,7 +14,7 @@
 	padding-bottom: 3em;
 	background: #fdfdfd;
 	min-height: 75vh;
-	 @media (max-width: 760px) {
+  @media (max-width: 760px) {
     min-height: 0;
     padding-bottom: 0;
   }
@@ -88,8 +88,12 @@
 
 #purchase, .purchase {
 	padding-top: 3em;
-	min-height: 75vh;
 	background: #fdfdfd;
+	min-height: 75vh;
+	/* Temporary fix for iOS viewport unit issue */
+ 	@media (max-width: 760px) {
+    min-height: 0;
+  }
 	.purchase-links {
 		margin-top: 3em;
 		text-align: center;
@@ -134,6 +138,9 @@
 	h3 {
 		@extend h1;
 		font-size: 4.25em;
+		@media (max-width: 760px) {
+			font-size: 3.75em;
+		}
 	}
 	hr {
 		color: $dark_blue;
